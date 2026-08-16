@@ -1,0 +1,12 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Compiled installers are attached to GitHub Releases, not committed to the tree
+*.dmg
+*.exe
+*.AppImage
+*.zip
+*.blockmap
+release/
+dist/
