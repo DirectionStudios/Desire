@@ -93,7 +93,7 @@ Looks · Atlas · Chat · Studio · Dispatch · Helios · Mission Control · Spi
 
 ## By the numbers
 
-<sub>Last updated 2026-08-17. Refreshed on every push.</sub>
+<sub>Last updated 2026-08-22. Refreshed on every push.</sub>
 
 | | | | |
 |:--|:--|:--|:--|
@@ -148,8 +148,6 @@ Desire is early. What's next:
 - **3,312 commits** since June 21, 2026, roughly **58 commits a day**
 - **~636k lines** of TypeScript/TSX application code across **~3,540 `.ts`/`.tsx` files** (~12,000 tracked files total)
 - A monorepo of 4 shared packages (`core`, `db`, `protocols`, `ui`) + 2 apps (`desktop`, `server`)
-- Full commit history scanned for exposed secrets, API keys, and credentials: **zero found**
-- Source private; full commit history and repo access available to verifiers on request
 
 <a href="https://github.com/DirectionStudios/Desire/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/DirectionStudios/Desire?style=for-the-badge&labelColor=141415&color=247894&label=release&display_name=tag&sort=semver"></a>
 ![commits](https://img.shields.io/badge/commits-3%2C312-988aba?style=for-the-badge&labelColor=141415)
