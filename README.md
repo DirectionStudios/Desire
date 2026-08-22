@@ -64,7 +64,7 @@ AI assistants are tourists on your computer. They can talk about your files but 
 
 ## Inside Desire
 
-A desktop application organized as **~105 module ids across 47 navigable surfaces**, and it keeps growing. New surfaces land most sessions. A few of the ones worth meeting first:
+A desktop application organized as **87 shipped modules**, and it keeps growing. New surfaces land most sessions. A few of the ones worth meeting first:
 
 | Surface | What it is |
 |:--|:--|
@@ -75,12 +75,12 @@ A desktop application organized as **~105 module ids across 47 navigable surface
 | **Envoy** | Voice command of both the app and the machine |
 
 <details>
-<summary><sub><b>The full surface list &nbsp;(75 shipped, more each session)</b></sub></summary>
+<summary><sub><b>The full surface list &nbsp;(87 shipped, more each session)</b></sub></summary>
 
 <br>
 
 <sub>
-Looks · Atlas · Chat · Studio · Dispatch · Helios · Mission Control · Spine · Arcane · Lyceum · Obligations · Follow-Through · Deals · Guardian · Vigil · Missions · CODEX Review · Lattice · Query · Privacy · Runtimes · Watch · Bridge · Model Hub · Time Machine · Echo Ambient · Resonance · Lingua · Clarity · Decisions · Board · Signal · Loadouts · Glyphs · Session Packs · Provenance · Wire · Intelligence · Commitments · Memory · Chronicle · Vault · Synapse · Inkwell · Terminal · Execution · Directives · Creator · Tool Completer · Constellation · Relay · Lens · ECHO Audio Hub · Echo · Photo Editor · Video Editor · 3D Design · Nocturnum · Finance · Financial Markets · Search · Nova Browser · Orbit · Nexus · Sidera · Sigil · MOSAIC · Do It Again · Sync · Monitor · Protocols · Crucible · Weave · Envoy · Undo Ledger
+Looks · Atlas · Chat · Studio · Dispatch · Helios · Mission Control · Spine · Arcane · Lyceum · Obligations · Follow-Through · Clarity · Decisions · Signal · Wire · Deals · Learning Map · Self-Improvement · Guardian · Vigil · Missions · CODEX Review · Lattice · Query · Privacy · Runtimes · Watch · Bridge · Model Hub · Time Machine · Echo Ambient · Resonance · Lingua · Board · Loadouts · Glyphs · Session Packs · Provenance · Intelligence · Commitments · Genesis · Memory · Chronicle · Vault · Synapse · Inkwell · Terminal · Execution · Directives · Creator · Tool Completer · Constellation · Relay · Lens · ECHO Audio Hub · Echo · Photo Editor · Video Editor · 3D Design · Nocturnum · Finance · Financial Markets · Search · Nova Browser · Orbit · Nexus · Sidera · Conflux · Sigil · MOSAIC · Marketplace · Do It Again · Sync · Velocity · Monitor · Protocols · Tessera · Folio · Crucible · Weave · Press · Trove · Workbench · Envoy · Recall · Undo Ledger
 </sub>
 
 </details>
@@ -93,12 +93,12 @@ Looks · Atlas · Chat · Studio · Dispatch · Helios · Mission Control · Spi
 
 ## By the numbers
 
-<sub>Last updated 2026-08-14. Refreshed on every push.</sub>
+<sub>Last updated 2026-08-17. Refreshed on every push.</sub>
 
 | | | | |
 |:--|:--|:--|:--|
-| **~569k** lines of TypeScript | **~3,100** files | **75** modules shipped of **~105** | **47** navigable surfaces |
-| **2,984** commits since 2026-06-21 | **~55** commits/day | **736**-check verification suite | **8**-stage CI |
+| **~636k** lines of TypeScript | **~3,540** TS/TSX files (**~12,000** tracked total) | **87** modules shipped | **4** shared packages + **2** apps |
+| **3,312** commits since 2026-06-21 | **~58** commits/day | **736**-check verification suite | **8**-stage CI |
 
 <br>
 
@@ -110,8 +110,8 @@ Grab the installer for your platform from the [**latest release**](https://githu
 |---|---|---|
 | macOS | `Desire-<version>-arm64.dmg` | Apple Silicon |
 | macOS | `Desire-<version>-x64.dmg` | Intel |
+| Linux | `Desire-<version>.AppImage` | x64 + arm64 |
 | Windows | `Desire-Setup-<version>.exe` | 64-bit, coming soon |
-| Linux | `Desire-<version>.AppImage` | coming soon |
 
 Desire runs offline out of the box. Online features are opt-in, per-feature, from inside the app.
 
@@ -137,7 +137,7 @@ Desire is early. What's next:
 
 ## Status
 
-> **Building toward the first public release.** Watch this repo (and the [Releases](https://github.com/DirectionStudios/Desire/releases) page) to know the moment new builds land.
+> **Early and moving fast.** macOS and Linux builds are live on the [Releases](https://github.com/DirectionStudios/Desire/releases) page today; Windows is next. Watch this repo to catch new builds as they land.
 
 <br>
 
@@ -145,14 +145,14 @@ Desire is early. What's next:
 
 ![contribution graph](docs/assets/contribution-graph.png)
 
-- **3,142 commits**, June 21 – August 16, 2026 (8-week span), committed on **53 of 57 days**
-- **543,255 lines** of TypeScript/TSX application code across **3,401 `.ts`/`.tsx` files** (11,847 tracked files total)
-- A **7-workspace monorepo** — 4 shared packages (`core`, `db`, `protocols`, `ui`) + 3 apps (`desktop`, `operator`, `server`)
-- Full commit history scanned for exposed secrets, API keys, and credentials — **zero found**
+- **3,312 commits** since June 21, 2026, roughly **58 commits a day**
+- **~636k lines** of TypeScript/TSX application code across **~3,540 `.ts`/`.tsx` files** (~12,000 tracked files total)
+- A monorepo of 4 shared packages (`core`, `db`, `protocols`, `ui`) + 2 apps (`desktop`, `server`)
+- Full commit history scanned for exposed secrets, API keys, and credentials: **zero found**
 - Source private; full commit history and repo access available to verifiers on request
 
-![release](https://img.shields.io/badge/release-v0.1.0-247894?style=for-the-badge&labelColor=141415)
-![commits](https://img.shields.io/badge/commits-3%2C142-988aba?style=for-the-badge&labelColor=141415)
+<a href="https://github.com/DirectionStudios/Desire/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/DirectionStudios/Desire?style=for-the-badge&labelColor=141415&color=247894&label=release&display_name=tag&sort=semver"></a>
+![commits](https://img.shields.io/badge/commits-3%2C312-988aba?style=for-the-badge&labelColor=141415)
 
 ## License
 
