@@ -120,6 +120,14 @@ Desire runs offline out of the box. Online features are opt-in, per-feature, fro
 
 <br>
 
+## Phone companion
+
+No app store needed yet. Desire's desktop app can serve a small companion page over your own Wi-Fi: open **Bridge** in Desire, start it, and a QR-free URL plus a one-time pairing code show up. Open that URL in your phone's browser, pair once, and choose **Add to Home Screen** — it behaves like an installed app from then on.
+
+It shows live status, anything waiting on your approval, and lets you send a quick task to Desire from your pocket. A handful of on-device capabilities (contacts, calendar, biometric unlock, screen brightness, spoken text-to-speech) need the native app and aren't reachable from a browser tab — those stay unavailable until the real iOS/Android build ships.
+
+<br>
+
 ## Built with
 
 Electron, React, TypeScript, and Vite, over a local SQLite database with an on-device vector index, so your data and your models stay on your machine.
@@ -130,9 +138,15 @@ Electron, React, TypeScript, and Vite, over a local SQLite database with an on-d
 
 Desire is early. What's next:
 
-- **Mobile companion app.** Pair a phone with the desktop to approve agent actions, watch Mission Control, and hit an emergency stop from your pocket. Built and running; a downloadable build is coming to Releases.
+- **A native mobile app.** A packaged, store-distributable companion for iOS and Android, for the capabilities the browser-based [phone companion](#phone-companion) can't reach (contacts, calendar, biometrics, and a few others). *In progress.*
 
 <sub>More lands here as it firms up.</sub>
+
+<br>
+
+## Phone companion (available now)
+
+No app install needed yet — Desire already serves a phone-friendly page straight from the desktop. In the app, go to **Bridge**, start it, and open the LAN URL it shows on your phone's browser (same Wi-Fi). Enter the pairing code once, then **Add to Home Screen** for an app-like icon. From there you can see what Desire's working on, approve or decline pending actions, and send it a quick task, all without leaving your phone.
 
 <br>
 
