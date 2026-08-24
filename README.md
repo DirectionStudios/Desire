@@ -93,12 +93,12 @@ Looks · Atlas · Chat · Studio · Dispatch · Helios · Mission Control · Spi
 
 ## By the numbers
 
-<sub>Last updated 2026-08-22. Refreshed on every push.</sub>
+<sub>Last updated 2026-08-24. Refreshed on every push.</sub>
 
 | | | | |
 |:--|:--|:--|:--|
-| **~636k** lines of TypeScript | **~3,540** TS/TSX files (**~12,000** tracked total) | **87** modules shipped | **4** shared packages + **2** apps |
-| **3,312** commits since 2026-06-21 | **~58** commits/day | **736**-check verification suite | **8**-stage CI |
+| **~659k** lines of TypeScript | **~3,700** TS/TSX files (**~12,200** tracked total) | **87** modules shipped | **4** shared packages + **2** apps |
+| **3,504** commits since 2026-06-21 | **~55** commits/day | **736**-check verification suite | **8**-stage CI |
 
 <br>
 
@@ -111,7 +111,8 @@ Grab the installer for your platform from the [**latest release**](https://githu
 | macOS | `Desire-<version>-arm64.dmg` | Apple Silicon |
 | macOS | `Desire-<version>-x64.dmg` | Intel |
 | Linux | `Desire-<version>.AppImage` | x64 + arm64 |
-| Windows | `Desire-Setup-<version>.exe` | 64-bit, coming soon |
+| Windows | `Desire-Setup-<version>-x64.exe` | 64-bit |
+| Windows | `Desire-Setup-<version>-arm64.exe` | ARM64 |
 
 Desire runs offline out of the box. Online features are opt-in, per-feature, from inside the app.
 
@@ -129,7 +130,7 @@ Electron, React, TypeScript, and Vite, over a local SQLite database with an on-d
 
 Desire is early. What's next:
 
-- **Mobile companions.** Pair a phone with the desktop to approve agent actions, watch Mission Control, and hit an emergency stop from your pocket. *Coming soon.*
+- **Mobile companion app.** Pair a phone with the desktop to approve agent actions, watch Mission Control, and hit an emergency stop from your pocket. Built and running; a downloadable build is coming to Releases.
 
 <sub>More lands here as it firms up.</sub>
 
@@ -137,7 +138,7 @@ Desire is early. What's next:
 
 ## Status
 
-> **Early and moving fast.** macOS and Linux builds are live on the [Releases](https://github.com/DirectionStudios/Desire/releases) page today; Windows is next. Watch this repo to catch new builds as they land.
+> **Early and moving fast.** macOS, Linux, and Windows builds are all live on the [Releases](https://github.com/DirectionStudios/Desire/releases) page today. Watch this repo to catch new builds as they land.
 
 <br>
 
@@ -145,12 +146,12 @@ Desire is early. What's next:
 
 ![contribution graph](docs/assets/contribution-graph.png)
 
-- **3,312 commits** since June 21, 2026, roughly **58 commits a day**
-- **~636k lines** of TypeScript/TSX application code across **~3,540 `.ts`/`.tsx` files** (~12,000 tracked files total)
+- **3,504 commits** since June 21, 2026, roughly **55 commits a day**
+- **~659k lines** of TypeScript/TSX application code across **~3,700 `.ts`/`.tsx` files** (~12,200 tracked files total)
 - A monorepo of 4 shared packages (`core`, `db`, `protocols`, `ui`) + 2 apps (`desktop`, `server`)
 
 <a href="https://github.com/DirectionStudios/Desire/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/DirectionStudios/Desire?style=for-the-badge&labelColor=141415&color=247894&label=release&display_name=tag&sort=semver"></a>
-![commits](https://img.shields.io/badge/commits-3%2C312-988aba?style=for-the-badge&labelColor=141415)
+![commits](https://img.shields.io/badge/commits-3%2C504-988aba?style=for-the-badge&labelColor=141415)
 
 ## License
 
