@@ -64,7 +64,7 @@ AI assistants are tourists on your computer. They can talk about your files but 
 
 ## Inside Desire
 
-A desktop application organized as **87 shipped modules**, and it keeps growing. New surfaces land most sessions. A few of the ones worth meeting first:
+A desktop application organized as **109 shipped modules**, and it keeps growing. New surfaces land most sessions. A few of the ones worth meeting first:
 
 | Surface | What it is |
 |:--|:--|
@@ -75,12 +75,12 @@ A desktop application organized as **87 shipped modules**, and it keeps growing.
 | **Envoy** | Voice command of both the app and the machine |
 
 <details>
-<summary><sub><b>The full surface list &nbsp;(87 shipped, more each session)</b></sub></summary>
+<summary><sub><b>The full surface list &nbsp;(109 shipped, more each session)</b></sub></summary>
 
 <br>
 
 <sub>
-Looks · Atlas · Chat · Studio · Dispatch · Helios · Mission Control · Spine · Arcane · Lyceum · Obligations · Follow-Through · Clarity · Decisions · Signal · Wire · Deals · Learning Map · Self-Improvement · Guardian · Vigil · Missions · CODEX Review · Lattice · Query · Privacy · Runtimes · Watch · Bridge · Model Hub · Time Machine · Echo Ambient · Resonance · Lingua · Board · Loadouts · Glyphs · Session Packs · Provenance · Intelligence · Commitments · Genesis · Memory · Chronicle · Vault · Synapse · Inkwell · Terminal · Execution · Directives · Creator · Tool Completer · Constellation · Relay · Lens · ECHO Audio Hub · Echo · Photo Editor · Video Editor · 3D Design · Nocturnum · Finance · Financial Markets · Search · Nova Browser · Orbit · Nexus · Sidera · Conflux · Sigil · MOSAIC · Marketplace · Do It Again · Sync · Velocity · Monitor · Protocols · Tessera · Folio · Crucible · Weave · Press · Trove · Workbench · Envoy · Recall · Undo Ledger
+Looks · Atlas · Machine Vision · Overview · Chat · Studio (classic) · Studio · Dispatch · Routines · Capabilities · Control Tower · Helios · Mission Control · Spine · Arcane · Lyceum · Obligations · Follow-Through · Clarity · Work Map · Decisions · Signal · Wire · Flow · Deals · Learning Map · Self & Tools · Self-Improvement · Advisory Board · Guardian · Vigil · Missions · CODEX Review · Lattice · Query · Privacy · Runtimes · Watch · Bridge · System Health · Awareness · Crew · Spaces · Mods · Model Hub · Time Machine · Echo Ambient · Resonance · Lingua · Board · Loadouts · Glyphs · Session Packs · Provenance · Intelligence · Commitments · Genesis · Memory · Chronicle · Vault · Synapse · Inkwell · Terminal · Execution · Directives · Creator · Armory · Constellation · Relay · Lens · ECHO Audio Hub · Echo · Photo Editor · Video Editor · 3D Design · Nocturnum · Finance · Financial Markets · Reverb · Search · Nova Browser · Orbit · Nexus · Sidera · Call Setup · Messaging Bots · Conflux · Smart Home · Sigil · MOSAIC · Marketplace · Do It Again · Sync · Velocity · Monitor · Protocols · Tessera · Folio · Crucible · Weave · Press · Trove · Workbench · Envoy · Recall · Undo Ledger · Atelier · Rewind · Pulse
 </sub>
 
 </details>
@@ -93,12 +93,12 @@ Looks · Atlas · Chat · Studio · Dispatch · Helios · Mission Control · Spi
 
 ## By the numbers
 
-<sub>Last updated 2026-08-24. Refreshed on every push.</sub>
+<sub>Last updated 2026-10-24. Refreshed on every push.</sub>
 
 | | | | |
 |:--|:--|:--|:--|
-| **~659k** lines of TypeScript | **~3,700** TS/TSX files (**~12,200** tracked total) | **87** modules shipped | **4** shared packages + **2** apps |
-| **3,504** commits since 2026-06-21 | **~55** commits/day | **736**-check verification suite | **8**-stage CI |
+| **~1.58M** lines of TypeScript | **~8,200** TS/TSX files (**~23,000** tracked total) | **109** modules shipped | **4** shared packages + **6** apps |
+| **5,636** commits since 2026-06-21 | **~45** commits/day | **1,277** smoke-test suites | **8**-stage CI |
 
 <br>
 
@@ -110,21 +110,21 @@ Grab the installer for your platform from the [**latest release**](https://githu
 |---|---|---|
 | macOS | `Desire-<version>-arm64.dmg` | Apple Silicon |
 | macOS | `Desire-<version>-x64.dmg` | Intel |
-| Linux | `Desire-<version>.AppImage` | x64 + arm64 |
 | Windows | `Desire-Setup-<version>-x64.exe` | 64-bit |
-| Windows | `Desire-Setup-<version>-arm64.exe` | ARM64 |
+| Linux | `Desire-<version>.AppImage` | x64 |
+| Linux | `Desire-<version>-arm64.AppImage` | ARM64 |
 
 Desire runs offline out of the box. Online features are opt-in, per-feature, from inside the app.
 
-<sub>The current build is unsigned. On macOS, right-click the app and choose **Open** on first launch to get past Gatekeeper.</sub>
+<sub>Macs need macOS 14 (Sonoma) or later. Builds are unsigned: on macOS, right-click the app and choose **Open** on first launch; on Windows, click **More info → Run anyway** if SmartScreen warns you; on Linux, `chmod +x` the AppImage.</sub>
 
 <br>
 
 ## Phone companion
 
-No app store needed yet. Desire's desktop app can serve a small companion page over your own Wi-Fi: open **Bridge** in Desire, start it, and a QR-free URL plus a one-time pairing code show up. Open that URL in your phone's browser, pair once, and choose **Add to Home Screen** — it behaves like an installed app from then on.
+No app store needed. Desire's desktop app serves a companion page over your own Wi-Fi: open **Bridge** in Desire, start it, and open the URL it shows on your phone with the one-time pairing code. Choose **Add to Home Screen** and it behaves like an installed app from then on.
 
-It shows live status, anything waiting on your approval, and lets you send a quick task to Desire from your pocket. A handful of on-device capabilities (contacts, calendar, biometric unlock, screen brightness, spoken text-to-speech) need the native app and aren't reachable from a browser tab — those stay unavailable until the real iOS/Android build ships.
+From your phone you can see what Desire is working on, approve or decline what it is waiting on, send it a quick task, share your clipboard both ways, and use the phone as a trackpad for your computer.
 
 <br>
 
@@ -134,38 +134,16 @@ Electron, React, TypeScript, and Vite, over a local SQLite database with an on-d
 
 <br>
 
-## Roadmap
-
-Desire is early. What's next:
-
-- **A native mobile app.** A packaged, store-distributable companion for iOS and Android, for the capabilities the browser-based [phone companion](#phone-companion) can't reach (contacts, calendar, biometrics, and a few others). *In progress.*
-
-<sub>More lands here as it firms up.</sub>
-
-<br>
-
-## Phone companion (available now)
-
-No app install needed yet — Desire already serves a phone-friendly page straight from the desktop. In the app, go to **Bridge**, start it, and open the LAN URL it shows on your phone's browser (same Wi-Fi). Enter the pairing code once, then **Add to Home Screen** for an app-like icon. From there you can see what Desire's working on, approve or decline pending actions, and send it a quick task, all without leaving your phone.
-
-<br>
-
-## Status
-
-> **Early and moving fast.** macOS, Linux, and Windows builds are all live on the [Releases](https://github.com/DirectionStudios/Desire/releases) page today. Watch this repo to catch new builds as they land.
-
-<br>
-
 ## The Receipts:
 
 ![contribution graph](docs/assets/contribution-graph.png)
 
-- **3,504 commits** since June 21, 2026, roughly **55 commits a day**
-- **~659k lines** of TypeScript/TSX application code across **~3,700 `.ts`/`.tsx` files** (~12,200 tracked files total)
-- A monorepo of 4 shared packages (`core`, `db`, `protocols`, `ui`) + 2 apps (`desktop`, `server`)
+- **5,636 commits** since June 21, 2026, roughly **45 commits a day**
+- **~1.58M lines** of TypeScript/TSX application code across **~8,200 `.ts`/`.tsx` files** (~23,000 tracked files total)
+- A monorepo of 4 shared packages (`core`, `db`, `protocols`, `ui`) + 6 apps (`desktop`, `server`, `mobile`, `operator`, and two browser extensions)
 
 <a href="https://github.com/DirectionStudios/Desire/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/DirectionStudios/Desire?style=for-the-badge&labelColor=141415&color=247894&label=release&display_name=tag&sort=semver"></a>
-![commits](https://img.shields.io/badge/commits-3%2C504-988aba?style=for-the-badge&labelColor=141415)
+![commits](https://img.shields.io/badge/commits-5%2C636-988aba?style=for-the-badge&labelColor=141415)
 
 ## License
 
