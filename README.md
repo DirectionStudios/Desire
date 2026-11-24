@@ -64,23 +64,23 @@ AI assistants are tourists on your computer. They can talk about your files but 
 
 ## Inside Desire
 
-A desktop application organized as **109 shipped modules**, and it keeps growing. New surfaces land most sessions. A few of the ones worth meeting first:
+A desktop application organized as **115 shipped modules**, and it keeps growing. New surfaces land most sessions. A few of the ones worth meeting first:
 
 | Surface | What it is |
 |:--|:--|
-| **Atlas** | The home dashboard. Tasks, goals, calendar, health, finance, journal, notes, and learning in one place |
+| **Atlas** | Home. Your dock, widgets and one ask bar, on a living look you can reshape by asking |
 | **Mission Control** | Watch the agent work in real time, with its own browser and a rewindable action timeline |
 | **Arcane** | The Agent Studio. Build subagents and full agents with their own roles, tools, permissions, and budgets |
 | **Sidera** | Encrypted peer-to-peer: chat, calls, screenshare, file transfer, and remote control |
-| **Envoy** | Voice command of both the app and the machine |
+| **Envoy** | Talk to Desire like a person. Same chat, same tools, first words in about 2 seconds on your own computer |
 
 <details>
-<summary><sub><b>The full surface list &nbsp;(109 shipped, more each session)</b></sub></summary>
+<summary><sub><b>The full surface list &nbsp;(115 shipped, more each session)</b></sub></summary>
 
 <br>
 
 <sub>
-Looks · Atlas · Machine Vision · Overview · Chat · Studio (classic) · Studio · Dispatch · Routines · Capabilities · Control Tower · Helios · Mission Control · Spine · Arcane · Lyceum · Obligations · Follow-Through · Clarity · Work Map · Decisions · Signal · Wire · Flow · Deals · Learning Map · Self & Tools · Self-Improvement · Advisory Board · Guardian · Vigil · Missions · CODEX Review · Lattice · Query · Privacy · Runtimes · Watch · Bridge · System Health · Awareness · Crew · Spaces · Mods · Model Hub · Time Machine · Echo Ambient · Resonance · Lingua · Board · Loadouts · Glyphs · Session Packs · Provenance · Intelligence · Commitments · Genesis · Memory · Chronicle · Vault · Synapse · Inkwell · Terminal · Execution · Directives · Creator · Armory · Constellation · Relay · Lens · ECHO Audio Hub · Echo · Photo Editor · Video Editor · 3D Design · Nocturnum · Finance · Financial Markets · Reverb · Search · Nova Browser · Orbit · Nexus · Sidera · Call Setup · Messaging Bots · Conflux · Smart Home · Sigil · MOSAIC · Marketplace · Do It Again · Sync · Velocity · Monitor · Protocols · Tessera · Folio · Crucible · Weave · Press · Trove · Workbench · Envoy · Recall · Undo Ledger · Atelier · Rewind · Pulse
+Looks · Home · God's Eye · Machine Vision · Overview · Chat · Studio (classic) · Studio · Dispatch · Routines · Capabilities · Control Tower · Helios · Mission Control · Atlas · Spine · Arcane · Lyceum · Obligations · Follow-Through · Clarity · Work Map · Decisions · Signal · Wire · Orchestration Factory · Flow · Deals · Learning Map · Self & Tools · Self-Improvement · Advisory Board · Guardian · Vigil · Missions · CODEX Review · Lattice · Query · Privacy · Runtimes · Watch · Control Center · Bridge · System Health · Awareness · Crew · Spaces · Mods · Model Hub · Time Machine · Echo Ambient · Resonance · Lingua · Board · Loadouts · Glyphs · Session Packs · Provenance · Intelligence · Commitments · Genesis · Memory · Chronicle · Vault · Synapse · Inkwell · Terminal · Execution · Directives · Creator · Armory · Constellation · Relay · Lens · ECHO Audio Hub · Echo · Photo Editor · Video Editor · 3D Design · Nocturnum · Finance · Financial Markets · Reverb · Search · Nova Browser · Orbit · Nexus · Sidera · Call Setup · Messaging Bots · Conflux · Smart Home · Sigil · Theme Studio · Marketplace · Do It Again · Devices · Velocity · Monitor · Settings · Tessera · Folio · Crucible · Weave · Press · Trove · Repo Library · Workbench · Envoy · Day Capsule · Recall · Undo Ledger · Atelier · Rewind · Pulse
 </sub>
 
 </details>
@@ -93,12 +93,12 @@ Looks · Atlas · Machine Vision · Overview · Chat · Studio (classic) · Stud
 
 ## By the numbers
 
-<sub>Last updated 2026-10-24. Refreshed on every push.</sub>
+<sub>Last updated 2026-11-24. Refreshed on every push.</sub>
 
 | | | | |
 |:--|:--|:--|:--|
-| **~1.58M** lines of TypeScript | **~8,200** TS/TSX files (**~23,000** tracked total) | **109** modules shipped | **4** shared packages + **6** apps |
-| **5,636** commits since 2026-06-21 | **~45** commits/day | **1,277** smoke-test suites | **8**-stage CI |
+| **~630K** lines of app code | **~9,850** TS/TSX files (**~20,400** tracked total) | **115** modules shipped | **4** shared packages + **6** apps |
+| **6,560** commits since 2026-06-21 | **~42** commits/day | **2,315** smoke-test suites | **8**-stage CI |
 
 <br>
 
@@ -122,9 +122,9 @@ Desire runs offline out of the box. Online features are opt-in, per-feature, fro
 
 ## Phone companion
 
-No app store needed. Desire's desktop app serves a companion page over your own Wi-Fi: open **Bridge** in Desire, start it, and open the URL it shows on your phone with the one-time pairing code. Choose **Add to Home Screen** and it behaves like an installed app from then on.
+No app store needed. Open **Bridge** in Desire, press **Connect your phone**, and scan the code with your phone's camera, then choose **Add to Home Screen**.
 
-From your phone you can see what Desire is working on, approve or decline what it is waiting on, send it a quick task, share your clipboard both ways, and use the phone as a trackpad for your computer.
+Your phone becomes a home screen of Desire apps you change by asking, with widgets and lock-screen notifications. Talk to Desire from it, see and approve what it's working on, and control your computer. Phone and computer find each other from anywhere with nothing to set up, and the phone keeps your last answers and queues requests while the computer is off.
 
 <br>
 
@@ -138,12 +138,12 @@ Electron, React, TypeScript, and Vite, over a local SQLite database with an on-d
 
 ![contribution graph](docs/assets/contribution-graph.png)
 
-- **5,636 commits** since June 21, 2026, roughly **45 commits a day**
+- **6,560 commits** since June 21, 2026, roughly **42 commits a day**
 - **~1.58M lines** of TypeScript/TSX application code across **~8,200 `.ts`/`.tsx` files** (~23,000 tracked files total)
 - A monorepo of 4 shared packages (`core`, `db`, `protocols`, `ui`) + 6 apps (`desktop`, `server`, `mobile`, `operator`, and two browser extensions)
 
 <a href="https://github.com/DirectionStudios/Desire/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/DirectionStudios/Desire?style=for-the-badge&labelColor=141415&color=247894&label=release&display_name=tag&sort=semver"></a>
-![commits](https://img.shields.io/badge/commits-5%2C636-988aba?style=for-the-badge&labelColor=141415)
+![commits](https://img.shields.io/badge/commits-6%2C560-988aba?style=for-the-badge&labelColor=141415)
 
 ## License
 
