@@ -104,7 +104,7 @@ Looks · Home · God's Eye · Machine Vision · Overview · Chat · Studio (clas
 
 ## Download
 
-Grab the installer for your platform from the [**latest release**](https://github.com/DirectionStudios/Desire/releases/latest):
+Grab the installer for your platform from the [**latest release**](https://github.com/DirectionStudios/Desire/releases/latest), where the release notes list everything new:
 
 | Platform | File | |
 |---|---|---|
